@@ -14,15 +14,11 @@
     <div class="room">
       <div class="room-name" >
         <%# <% Room.all.each do |room| %> 
-          <a href="#"><%= room.name %></a>
+        <%= link_to room.name, room_messages_path(room.id), method: :get, local: true %>
+          <%# <a href="#"><%= room.name %><%#</a> %>
         <%# <% end %> 
         <%# <a href="#">room1</a> %>
       </div>
     </div>
   <% end %>
-  <%# <div class="room">
-    <div class="room-name" >
-      <a href="#">room2</a>
-    </div>
-  </div> %>
 </div>
