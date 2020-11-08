@@ -12,7 +12,8 @@
 </div>
 
 <div class="chat-main" >
-  <div class="chat-status" >
+  <%= render partial: 'message', collection: @messages %>
+  <%# <div class="chat-status" >
     <div class="status-main" >
       <div class="name-content" >
         Tom
@@ -41,7 +42,7 @@
         ああああ
       </div>
     </div>
-  </div>
+  </div> %>
 </div>
 
 <%# <div class="chat-footer" > %>
